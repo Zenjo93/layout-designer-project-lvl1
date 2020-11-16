@@ -78,7 +78,7 @@ h1 {
     padding-top: 121px;
 }
 
-.header-title {
+.primary-text {
     color: var(--primary);
 }
 
@@ -109,6 +109,9 @@ h1 {
     text-align: center;
 }
 
+.btn:hover {
+    background-color: #EA7600;
+}
 
 h2 {
     text-align: center;
@@ -123,19 +126,21 @@ h2 {
     margin-bottom: 35px;
 }
 
-.video {
+.video-container {
     position: relative;
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-    width: 100%;
-    z-index: 1;
-    
+    height: 380px;
+
 }
 
-.rules-5 {
-    position: relative;
-    background-color: var(--primary-dark);
-    height: 100px;
-    top: -200px;
-    
+.video {
+    position: absolute;
+    left: 10%;
+    bottom: -200px;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+   
+}
 
+.menu {
+    background-color: var(--primary-dark);
+    height: 800px;
 }
