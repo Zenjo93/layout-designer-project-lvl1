@@ -1,1 +1,33 @@
 /** CSS STYLE **/
+@import url('colors.css');
+@import url('fonts.css');
+
+.fs-72 {
+    font-size: 72px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-34 {
+    font-size: 34px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-100 {
+    margin-bottom: 100px;
+}
+
+
+body {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    line-height: var(--title-line-height);
+}

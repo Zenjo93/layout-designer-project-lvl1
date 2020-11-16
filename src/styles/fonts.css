@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+:root {
+    --main-font: 'Open Sans', sans-serif;
+    --title-font: 'Neucha', cursive;
+    --font-size: 16px;
+    --main-line-height: 1.6em;
+    --title-line-height: 1.2em;
+    --main-text-color: #2A2626;
+
+}
