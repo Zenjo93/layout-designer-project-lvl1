@@ -41,6 +41,7 @@ h1, h2, h3 {
 .container {
     width: 1110px;
     margin: 0 auto;
+    max-height: fit-content;
 }
 
 header::before {
@@ -106,6 +107,35 @@ h1 {
     width: 150px;
     line-height: 50px;
     text-align: center;
-
 }
 
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text-disclaimer {
+    display: block;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    margin-bottom: 35px;
+}
+
+.video {
+    position: relative;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.rules-5 {
+    position: relative;
+    background-color: var(--primary-dark);
+    height: 100px;
+    top: -200px;
+    
+
+}
