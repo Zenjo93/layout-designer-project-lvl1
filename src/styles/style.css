@@ -2,21 +2,45 @@
 @import url('colors.css');
 @import url('fonts.css');
 
-.fs-72 {
-    font-size: 72px;
+
+.fs-34 {
+    font-size: 34px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+
+.fs-52 {
+    font-size: 52px;
 }
 
 .fs-60 {
     font-size: 60px;
 }
 
-.fs-34 {
-    font-size: 34px;
+.fs-64 {
+    font-size: 64px;
+}
+
+
+.fs-72 {
+    font-size: 72px;
+}
+
+.no-padding {
+    padding: 0%;
 }
 
 .mt-40 {
     margin-top: 40px;
 }
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 
 .mt-100 {
     margin-top: 100px;
@@ -26,6 +50,40 @@
     margin-bottom: 100px;
 }
 
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pa-24 {
+    padding: 24px;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.space-between {
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
+
+.title-font {
+    font-family: var(--title-font);
+    line-height: var(--title-line-height);
+}
+
+.block {
+    display: block;
+}
 
 body {
     width: 1440px;
@@ -41,8 +99,11 @@ h1, h2, h3 {
 .container {
     width: 1110px;
     margin: 0 auto;
-    max-height: fit-content;
+    height: 80%;
+    
 }
+
+
 
 header::before {
     position: absolute;
@@ -78,10 +139,13 @@ h1 {
     padding-top: 121px;
 }
 
-.primary-text {
+.primary-text-color {
     color: var(--primary);
 }
 
+.white-text {
+    color: var(--white);
+}
 
 .title-container {
     display: flex;
@@ -142,5 +206,61 @@ h2 {
 
 .menu {
     background-color: var(--primary-dark);
-    height: 800px;
+    height: 900px;
 }
+
+.item {
+    width: 27%;
+    background-color: var(--background-light);
+    padding: 24px;
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+}
+
+.item:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.item:hover .primary-text-color {
+    color: var(--white);
+}
+
+
+
+.menu-title {
+    width: 31%;
+}
+
+
+
+/* .menu-title {
+    font-family: var(--title-font); 
+}
+
+
+.menu-item {
+    diplay: block;
+    background-color: var(--background-light);
+    font-family: var(--main-font);
+    width: 300px;
+    height: 310px;
+    padding: 24px;
+}
+
+.number {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-family: var(--title-font);
+    line-height: 1;
+}
+
+.menu-item:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.menu-item:hover .primary-text {
+    color: var(--white);
+} */
