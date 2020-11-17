@@ -2,6 +2,9 @@
 @import url('colors.css');
 @import url('fonts.css');
 
+.fs-24 {
+    font-size: 24px;
+}
 
 .fs-34 {
     font-size: 34px;
@@ -41,6 +44,10 @@
     margin-bottom: 40px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 
 .mt-100 {
     margin-top: 100px;
@@ -50,6 +57,19 @@
     margin-bottom: 100px;
 }
 
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.pb-24{
+    padding-bottom: 24px;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+
+
 .pt-100 {
     padding-top: 100px;
 }
@@ -57,6 +77,7 @@
 .pa-24 {
     padding: 24px;
 }
+
 
 .flex {
     display: flex;
@@ -70,6 +91,14 @@
     color: var(--white);
 }
 
+.lh-1_6 {
+    line-height: var(--title-line-height);
+}
+
+.lh-1_1 {
+    line-height: 1.1;
+}
+
 .space-between {
     justify-content: space-between;
     align-content: space-between;
@@ -79,6 +108,16 @@
 .title-font {
     font-family: var(--title-font);
     line-height: var(--title-line-height);
+}
+
+
+.main-font {
+    font-family: var(--main-font);
+    line-height: var(--main-line-height);
+}
+
+.trans-white {
+    color: var(--translucent-white);
 }
 
 .block {
@@ -104,8 +143,7 @@ h1, h2, h3 {
 }
 
 
-
-header::before {
+.header::before {
     position: absolute;
     display: block;
     content: '';
@@ -232,35 +270,58 @@ h2 {
     width: 31%;
 }
 
-
-
-/* .menu-title {
-    font-family: var(--title-font); 
+.content-section::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/image 1.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
 }
 
-
-.menu-item {
-    diplay: block;
+.content-section {
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
     background-color: var(--background-light);
-    font-family: var(--main-font);
-    width: 300px;
-    height: 310px;
-    padding: 24px;
+
 }
 
-.number {
-    display: block;
-    margin-bottom: 40px;
-    font-size: 64px;
-    font-family: var(--title-font);
-    line-height: 1;
+.flex-img {
+    width: 50%;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.menu-item:hover {
-    background-color: var(--primary);
-    color: var(--white);
+.title-text-block {
+    width: 45%;
 }
 
-.menu-item:hover .primary-text {
-    color: var(--white);
-} */
+.inline-separator {
+    width: 100%;
+    background-color: var(--brown);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    z-index: 1;
+
+}
+
+.text-block {
+    width: 47%;
+}
+
+.dark-bg {
+    background-color: var(--brown);
+
+}
+.dark-text {
+    color: var(--primary-dark);
+}
+
+.light-bg {
+    background-color: var(--background-light);
+}
