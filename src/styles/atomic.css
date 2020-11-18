@@ -5,7 +5,7 @@
 
 .fs-18 {font-size: 18px;}
 
-.fs-24 {font-size: 24px;}
+.fs-24 {font-size: 24px !important;}
 
 .fs-34 {font-size: 34px;}
 
@@ -46,13 +46,9 @@
 .mb-100 {margin-bottom: 100px;}
 
 /* m-right */
-.mr-20 {
-    margin-right: 30px;
-}
+.mr-20 {margin-right: 30px;}
 
-.mr-30 {
-    margin-right: 30px;
-}
+.mr-30 {margin-right: 30px;}
 
 /*** PADDING ***/
 
