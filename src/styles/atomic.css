@@ -13,7 +13,7 @@
 
 .fs-40 {font-size: 40px;}
 
-.fs-52 {font-size: 52px;}
+.fs-52 {font-size: 52px !important;}
 
 .fs-60 {font-size: 60px;}
 
@@ -46,6 +46,10 @@
 .mb-100 {margin-bottom: 100px;}
 
 /* m-right */
+.mr-20 {
+    margin-right: 30px;
+}
+
 .mr-30 {
     margin-right: 30px;
 }
