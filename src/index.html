@@ -32,7 +32,7 @@
                         цикл, а остатки нейтрализовать.
                         <br>
                     </div>
-                    <a href="#" class="btn btn-header mt-40">Подробнее</a>
+                    <a href="#menu-cards" class="btn btn-header mt-40">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
         </div>
     </main>
 
-    <section class="menu pb-100 pt-100">
+    <section id="menu-cards" class="menu pb-100 pt-100">
         <div class="container flex-container pt-100">
             <div class="menu-title mb-20">
                 <span class="h2 fs-52 primary-color"> 5 когнитивных искажений
@@ -61,45 +61,51 @@
                     </span></span>
             </div>
             <div class="card mb-20">
-                <span class="card-number">1</span>
-                <span class="h3 primary-color">Эффект ИКЕА</span>
-                <p>
-                    <span class="">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения
-                        других.</span>
-            </div>
+                <a href="#ikea" class="card-link">
+                    <span class="card-number">1</span>
+                    <span class="h3 primary-color">Эффект ИКЕА</span>
+                    <p>
+                        <span class="">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения
+                            других.</span>
+                </a></div>
+
             <div class="card mb-20">
+                <a href="#optimization" class="card-link">
                 <span class="card-number">2</span>
                 <span class="h3 primary-color">Преждевременная оптимизация</span>
                 <p>
                     <span class="">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения
                         других.</span>
-            </div>
+                    </a></div>
             <div class="card ">
+                <a href="#novelty" class="card-link">
                 <span class="card-number">3</span>
                 <span class="h3 primary-color">Искажение новизны</span>
                 <p>
                     <span class="">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения
                         других.</span>
-            </div>
+                    </a></div>
             <div class="card ">
+                <a href="#hyper-deprec" class="card-link">
                 <span class="card-number">4</span>
                 <span class="h3 primary-color">Гиперболическое обесценивание</span>
                 <p>
                     <span class="">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения
                         других.</span>
-            </div>
+                    </a></div>
             <div class="card">
+                <a href="#plan-mistake" class="card-link">
                 <span class="card-number">5</span>
                 <span class="h3 primary-color">Ошибка планирования</span>
                 <p>
                     <span class="">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения
                         других.
                     </span>
-            </div>
+                </a></div>
         </div>
     </section>
 
-    <section class="light-bg pt-100 pb-100">
+    <section id="ikea" class="light-bg pt-100 pb-100">
         <div class="container bg flex-container">
             <img src="img/img-ikea-effect.png" class="flex-img" alt="Эффект ИКЕА">
             <div class="flex-item">
@@ -125,7 +131,7 @@
         </div>
     </section>
 
-    <section class="dark-bg pt-100 pb-100">
+    <section id="optimization" class="dark-bg pt-100 pb-100">
         <div class="container bg flex-container white-text">
             <div class="flex-item">
                 <span class="h3 fs-24">Когнитивные искажения</span>
@@ -149,7 +155,7 @@
         </div>
     </section>
 
-    <section class="light-bg pt-100 pb-100">
+    <section id="novelty" class="light-bg pt-100 pb-100">
         <div class="container bg flex-container">
             <img src="img/img-distortion-of-novelty.png" class="flex-img" alt=">Искажение новизны">
             <div class="flex-item">
@@ -173,7 +179,7 @@
         </div>
     </section>
 
-    <section class="dark-bg pt-100 pb-100">
+    <section id="hyper-deprec" class="dark-bg pt-100 pb-100">
         <div class="container bg flex-container white-text">
             <div class="flex-item">
                 <span class="h3 fs-24">Когнитивные искажения</span>
@@ -199,7 +205,7 @@
         </div>
     </section>
 
-    <section class="light-bg pt-100 pb-100">
+    <section id="plan-mistake" class="light-bg pt-100 pb-100">
         <div class="container bg flex-container">
             <img src="img/img-planning-error.png" class="flex-img" alt="Ошибка планирования">
             <div class="flex-item">
@@ -223,8 +229,8 @@
         </div>
     </section>
 
-    <footer class="pt-100 pb-100 no-bg">
-        <div class="container main-dark-bg flex-container">
+    <footer class="pt-100 pb-100 ">
+        <div class="container main-dark-bg flex-container no-bg">
             <div class="h3 white-text footer-text">
                 Хотите узнать больше? <br>
                 Подпишитесь на обновления
@@ -232,22 +238,23 @@
             <div class="email mt-40 mb-40">
                 <span class="white-text main-font fs-18 bold">Электронная почта</span> <br>
 
-                <label for="email"><input type="email" placeholder="Ваша электронная почта" name="firstName" /></label>
-                <button></button>
+                <label for="email"><input type="email" class="email-input" placeholder="Ваша электронная почта"
+                        name="firstName" /></label>
+                <button class="btn email-btn"></button>
                 <br>
                 <span class="white-text fs-12 lh-1_6">Подписываясь, вы принимаете <span class="underline">правила
                         сервиса</span></span>
             </div>
         </div>
-    
+
         <div class="container no-bg"">
-            <div class="under-footer fs-12 mt-100 ">
+            <div class=" under-footer fs-12 mt-100 ">
                 © 2020 Владислав Бережной <br>
-                <span class="block mt-12">По материалам статьи Yash Ranadive <a
-                        href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b"> Cognitive
-                        Biases in Programming </a> </span>
-                <a href="https://ru.hexlet.io/my" class="mt-12 block">Курсы программирования Hexlet</a>
-            </div>
+                <span class=" block mt-12">По материалам статьи Yash Ranadive <a
+                href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b"> Cognitive
+                Biases in Programming </a> </span>
+            <a href="https://ru.hexlet.io/my" class="mt-12 block">Курсы программирования Hexlet</a>
+        </div>
         </div>
 
     </footer>

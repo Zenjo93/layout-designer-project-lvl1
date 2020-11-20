@@ -109,6 +109,7 @@ body {
     margin: 0 auto;
     position: relative;
     
+    
 }
 
  .container::before {
@@ -120,7 +121,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 10%;
-    z-index: -1;
+    z-index: -5;
 } 
 
 /* HEADER */
@@ -144,15 +145,16 @@ header {
 .btn {
     background-color: var(--primary);
     font-weight: bold;
-
     padding-right: 24px;
     padding-left: 24px;
     padding-top: 12px;
     padding-bottom: 12px; 
+  
 }
 
 .btn:hover {
-    background-color: #ffffff;
+    background-color: #EA7600;
+    
 }
 
 .btn-header {
@@ -178,10 +180,12 @@ header {
 
 /* VIDEO SECTION */
 
+
 .no-bg::before {
     content: none;
     background-color: #ffffff;
-    z-index: 2;
+    z-index: 5;
+     
 }
 
 .text-center {
@@ -211,11 +215,21 @@ header {
 }
 
 .card {
+    display: block;
     box-sizing: border-box;
     max-width: 32%;
     height: auto ;
     padding: 24px;
     background-color: var(--background-light);
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:visited {
+    text-decoration: none;
+    color: var(--main-text-color);
 }
 
 .card-number {
@@ -299,7 +313,7 @@ header {
     width: 50%; 
 }
 
-input[type="email"] {
+.email-input {
     padding: 15px;
     font-size: 18px;
     height: 50px;
@@ -307,14 +321,14 @@ input[type="email"] {
     font-family: var(--main-font);
     border: none;
     box-sizing: border-box;
+    
 }
 
-/* form-btn вешаем иконку */ 
 
-button {
+.email-btn {
     position: relative;
-    top: 17px;
-    left: -5px;
+    top: 6px;
+    left: -4px;
     width: 70px;
     height: 50px;
     background-color: var(--primary);
@@ -322,14 +336,11 @@ button {
     margin-right: 75px;
 }
 
-button::before {
+.email-btn::before {
     display: block;
     position: absolute;
-
-    /* content: url("data:image/svg+xml;charset=UTF-8, <svg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M21 1L14 21L10 12L1 8L21 1Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/> </svg>"); */
+    top: 15px;
     content: ' ';
-    /* content: url("data:image/svg+xml;charset=UTF-8, <svg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M21 1L10 12' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/> <path d='M21 1L14 21L10 12L1 8L21 1Z' stroke='white' stroke-width='2' 'stroke-linecap='round' stroke-linejoin='round'/> </svg>"); */
-
     background-image: url("../img/Vector.svg");
     background-size: 20px 20px;
     height: 20px;
