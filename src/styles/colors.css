@@ -10,3 +10,19 @@
     --blue: #1085c5;
     --main-text-color: #2A2626;
 }
+
+.trans-white {
+    color: var(--translucent-white);
+}
+
+.primary-color {
+    color: var(--primary);
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.dark-text {
+    color: var(--primary-dark);
+}
