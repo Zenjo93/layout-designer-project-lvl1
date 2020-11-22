@@ -203,6 +203,8 @@ body {
 
 .card-link {
     text-decoration: none;
+    display: block;
+    height: 100%;
 }
 
 .card-link:link {
