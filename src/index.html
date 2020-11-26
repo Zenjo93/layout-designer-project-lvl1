@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header class="bg">
-        <div class="container pt-100 pb-100">
+    <header class="bg-image pt-100 pb-100">
+        <div class="container">
             <h1 class="h1"><span class="primary-color">Когнитивные<br> искажения<br></span> в программировании</h1>
             <img class="header-img" src="img/tota_ill-4_1.png" alt="Когнитивные искажения в программировании">
             <div class="flex-container mt-225">
@@ -24,14 +24,12 @@
                     <div class="flex-item">
                         Вместе они формируют что-то вроде замкнутого цикла, и это может привести к
                         длительной потере продуктивности, багам и бесконечному разочарованию.
-                        <br>
-                        <br>
-                        Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем
-                        сломать
-                        и
-                        цикл, а остатки нейтрализовать.
-                        <br>
-                        <a href="#menu-cards" class="btn btn-header mt-40">Подробнее</a>
+                        <p>
+                            Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем
+                            сломать
+                            и
+                            цикл, а остатки нейтрализовать.
+                            <a href="#menu-cards" class="btn btn-text mt-40">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -39,19 +37,17 @@
     </header>
 
     <main class="pt-100 ">
-        <div class="container">
+        <div class="container text-center">
             <h2 class="h2 text-center mb-30">Что же это такое,
                 <br><span class="primary-color">когнитивные искажения?</span></h2>
             <div class="text-center mb-35"> Что такое когнитивные искажения. Petrovna Channel </div>
-            <div class="video-container">
-                <iframe class="video"  src="https://www.youtube.com/embed/jie9AizBqss"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
+            <iframe class="video" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0"
+                allowfullscreen></iframe>
         </div>
     </main>
 
-    <section id="menu-cards" class="menu pb-100 pt-100">
-        <div class="container pt-100">
+    <section id="menu-cards" class="menu pb-100 pt-200">
+        <div class="container">
             <div class="flex-container">
 
                 <div class="item-container">
@@ -121,7 +117,7 @@
         </div>
     </section>
 
-    <section id="ikea" class="light-bg pt-100 pb-100 bg">
+    <section id="ikea" class="light-bg pt-100 pb-100 bg-image">
         <div class="container flex-container">
             <div class="flex-container ">
                 <img src="img/img-ikea-effect.png" class="flex-img" alt="Эффект ИКЕА">
@@ -152,7 +148,7 @@
         </div>
     </section>
 
-    <section id="optimization" class="dark-bg pt-100 pb-100 bg">
+    <section id="optimization" class="dark-bg pt-100 pb-100 bg-image">
         <div class="container flex-container white-text">
             <div class="flex-container">
                 <div class="flex-item">
@@ -178,7 +174,7 @@
         </div>
     </section>
 
-    <section id="novelty" class="light-bg pt-100 pb-100 bg">
+    <section id="novelty" class="light-bg pt-100 pb-100 bg-image">
         <div class="container flex-container">
             <div class="flex-container">
                 <img src="img/img-distortion-of-novelty.png" class="flex-img" alt=">Искажение новизны">
@@ -204,7 +200,7 @@
         </div>
     </section>
 
-    <section id="hyper-deprec" class="dark-bg pt-100 pb-100 bg">
+    <section id="hyper-deprec" class="dark-bg pt-100 pb-100 bg-image">
         <div class="container flex-container white-text">
             <div class="flex-container">
                 <div class="flex-item">
@@ -231,7 +227,7 @@
         </div>
     </section>
 
-    <section id="plan-mistake" class="light-bg pt-100 pb-100 bg">
+    <section id="plan-mistake" class="light-bg pt-100 pb-100 bg-image">
         <div class="container flex-container">
             <div class="flex-container">
                 <img src="img/img-planning-error.png" class="flex-img" alt="Ошибка планирования">
@@ -258,26 +254,24 @@
     </section>
 
     <footer class="pt-100 pb-100 ">
-        <div class="container main-dark-bg flex-container ">
+        <div class="container main-dark-bg flex-container">
             <div class="h3 white-text footer-text">
                 Хотите узнать больше? <br>
                 Подпишитесь на обновления
             </div>
-            <div class="email mt-40 mb-40">
-                <span class="white-text fs-18 bold">Электронная почта</span> <br>
-
-                <label for="email"><input type="email" id="email" class="email-input" placeholder="Ваша электронная почта"
-                        name="firstName" /></label>
+            <form action="" class="email mt-40 mb-40">
+                <div class="white-text fs-18 bold">Электронная почта</div>
+                <input type="email" id="email" class="email-input" placeholder="Ваша электронная почта"
+                    name="firstName" />
                 <button class="btn email-btn"></button>
-                <br>
-                <span class="white-text fs-12 lh-1_6">Подписываясь, вы принимаете <span class="underline">правила
+                <span class="white-text fs-12 ">Подписываясь, вы принимаете <span class="underline">правила
                         сервиса</span></span>
-            </div>
+            </form>
         </div>
 
         <div class="container">
             <div class=" under-footer fs-12 mt-100 ">
-                © 2020 Владислав Бережной <br>
+                © 2020 Владислав Бережной
                 <div class="mt-12">По материалам статьи Yash Ranadive <a
                         href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b"> Cognitive
                         Biases in Programming </a> </div>
