@@ -70,6 +70,10 @@ body {
     font-family: var(--title-font);
 }
 
+p {
+    margin:0;
+    margin-bottom: 10px;
+}
 
 .container {
     width: 1110px;
@@ -121,7 +125,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #EA7600;
+    background-color: var(--orange);
     
 }
 
